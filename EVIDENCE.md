@@ -31,5 +31,17 @@
 ## QUALITY & DOCUMENTATION
 - [x] Automated tests cover schema validation and mismatch rejection.
   - **Proof**: See `test_engine.py`.
+- [x] Evaluation script calculates Top-1 precision on a labeled set.
+  - **Proof**: See `eval.py`. Output:
+    ```
+    Running Top-1 Precision Evaluation...
+    ✅ Pass: 'red fox' matched red_fox_forest_1786427874033.jpg
+    ✅ Pass: 'gray wolf' matched gray_wolf_snow_1786427885755.jpg
+    ✅ Pass: 'brown bear' matched brown_bear_river_1786427911892.jpg
+    ✅ Pass: 'dog' matched brown_dog_park_1786427897873.jpg
+
+    --- EVALUATION RESULTS ---
+    Top-1 Precision: 100% (4/4 correct)
+    ```
 - [x] README with architecture explanation and diagram.
   - **Proof**: See `README.md`.
